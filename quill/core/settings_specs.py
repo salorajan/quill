@@ -305,7 +305,7 @@ SETTING_SPECS: tuple[SettingSpec, ...] = (
         "editing",
         "choice",
         "What to do when you press Backspace immediately after an abbreviation expands.",
-        choices=("delete", "revert"),
+        choices=(("delete", "Delete the expanded text"), ("revert", "Restore the abbreviation")),
         keywords=("abbreviation", "backspace", "undo", "delete", "revert"),
     ),
     SettingSpec(
